@@ -17,7 +17,7 @@ class MessagesController < ApplicationController
       flash[:notice] = "Your message has been sent."
       redirect_to contact_path(@contact)
     else
-      render 'new'
+      render :new
     end
   end
 
